@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>ML API</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Predict IPO Performance</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}" method="post">
+		<input type="text" name="Issue Price" placeholder="Issue Price of IPO" required="required" />
+    <input type="text" name="Lot Size" placeholder="Lot Size of IPO" required="required" />
+		<input type="text" name="Issue Price (Rs Cr)" placeholder="Issue Price (Rs Cr) in Rupees" required="required" />
+    <input type="text" name="QIB" placeholder="Qualified Insitutional Buyer Rate" required="required" />
+    <input type="text" name="NII" placeholder="Non-institutional Investors rate" required="required" />
+    <input type="text" name="RII" placeholder="Retail Individual Investors rate" required="required" />
+    <input type="text" name="TOTAL" placeholder="Total Subscription Rate" required="required" />
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+ <img src="/static/images/Original.svg" style="width: 400px;position: absolute;bottom: 10px;left: 10px;" alt="Company Logo"/>
+
+</body>
+</html>
