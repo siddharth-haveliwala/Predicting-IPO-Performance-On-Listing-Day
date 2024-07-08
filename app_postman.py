@@ -32,7 +32,13 @@ def price_predict():
                             'TOTAL':[total]})
     
     pred_result = model.predict(test_df)
-    return jsonify({'The IPO will be a ' + str(pred_result)})
+
+    if pred_result == 1:
+        pred_result = 'Success.'
+    else:
+        pred_result = 'Failure.'
+
+    return jsonify({'The IPO will be a ': str(pred_result)})
 
 # Driver function
 if __name__ == '__main__':
