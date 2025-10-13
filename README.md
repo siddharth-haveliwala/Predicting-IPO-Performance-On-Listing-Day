@@ -4,6 +4,8 @@ This project delivers a robust Machine Learning solution to predict the performa
 
 The predictive model is containerized and deployed as a live web application using **Flask**, allowing users to input real-time IPO metrics and receive an instant prediction.
 
+**Refer to the Project Presentation.pptx for project overview.**
+
 ## ✨ Key Features
 - **Classification Model:** Utilizes a **Logistic Regression Classifier** (chosen for its high accuracy and explainability) to predict the listing-day outcome.
 
