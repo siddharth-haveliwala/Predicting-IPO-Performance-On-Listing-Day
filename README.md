@@ -6,6 +6,9 @@ The predictive model is containerized and deployed as a live web application usi
 
 (**Refer to the Project Presentation.pptx for project overview.**)
 
+<img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/d49e3dff-cb53-4288-ac5e-d48d4e1fb651" />
+
+
 ## ✨ Key Features
 - **Classification Model:** Utilizes a **Logistic Regression Classifier** (chosen for its high accuracy and explainability) to predict the listing-day outcome.
 
@@ -20,6 +23,7 @@ The predictive model is containerized and deployed as a live web application usi
 ### Data Features Used
 The model uses the following seven key features, which capture both the financial valuation and market demand of the IPO:
 
+<img width="1000" height="800" alt="image" src="https://github.com/user-attachments/assets/25fd0af2-744e-4f78-b9b6-112296a8e6bf" />
 
 | Feature Name | Description |
 |--------------|-------------|
@@ -35,9 +39,9 @@ Multiple classification models were evaluated during the exploration phase (`mod
 
 | Model | Accuracy (%) |
 |--------------|-------------|
-| **Logistic Regression** | 76.7% |
-| **Random Forest Classifier** | 76.7% |
-| **Multilayer Perceptron (NN)** | 76.7% |
+| **Logistic Regression** | 76.667% |
+| **Random Forest Classifier** | 75.7% |
+| **Multilayer Perceptron (NN)** | 76.667% |
 
 The Logistic Regression model was selected for final deployment due to its superior interpretability and efficiency, making the prediction results more transparent.
 
