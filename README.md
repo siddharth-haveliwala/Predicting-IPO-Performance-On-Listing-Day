@@ -1,4 +1,4 @@
-# 🚀 Predicting IPO Performance on Listing Day
+# Predicting IPO Performance on Listing Day
 
 This project delivers a robust Machine Learning solution to predict the performance of Initial Public Offerings (IPOs) on their listing day in the Indian Stock Market. By analyzing critical pre-listing financial and subscription metrics, the model classifies an IPO as a _'Success'_ or _'Failure'_ (i.e., whether it lists at a premium or a discount).
 
@@ -9,7 +9,7 @@ The predictive model is containerized and deployed as a live web application usi
 <img width="800" height="600" alt="image" src="https://github.com/user-attachments/assets/d49e3dff-cb53-4288-ac5e-d48d4e1fb651" />
 
 
-## ✨ Key Features
+## Key Features
 - **Classification Model:** Utilizes a **Logistic Regression Classifier** (chosen for its high accuracy and explainability) to predict the listing-day outcome.
 
 - **High Accuracy:** The finalized model achieved an accuracy of 76.67% on the test dataset.
@@ -18,7 +18,7 @@ The predictive model is containerized and deployed as a live web application usi
 
 - **API Ready:** Includes a clean backend structure for integration into other applications.
 
-## 🎯 Model & Methodology
+## Model & Methodology
 
 ### Data Features Used
 The model uses the following seven key features, which capture both the financial valuation and market demand of the IPO:
@@ -45,7 +45,7 @@ Multiple classification models were evaluated during the exploration phase (`mod
 
 The Logistic Regression model was selected for final deployment due to its superior interpretability and efficiency, making the prediction results more transparent.
 
-## ⚙️ Project Architecture
+## Project Architecture
 The project follows a standard MLOps-lite architecture:
 
 - Training (`model.py` / `ipo_prediction.ipynb`): Data preprocessing, feature selection, model training, and hyperparameter tuning. The final model is serialized and saved as `model.pkl`.
@@ -54,7 +54,7 @@ The project follows a standard MLOps-lite architecture:
 
 - Prediction API Endpoint (`/predict`): The server receives input data from the web form (`index.html`), transforms it into the format expected by the model, makes a prediction, and returns the result to the user.
 
-## ▶️ Getting Started (Local Setup)
+## Setup and Run in Local
 To run the application locally on your machine, follow these steps:
 
 **1. Clone the Repository**
@@ -89,7 +89,7 @@ Start the web server:
 
 The application will now be running on `http://127.0.0.1:5000/`. Open this URL in your browser to access the prediction interface.
 
-## ☁️ Deployment (Heroku)
+## App Deployment (Heroku)
 This project is configured for deployment on the Heroku cloud platform.
 
 - **Prerequisites**: Ensure you have the Heroku CLI installed and logged in.
